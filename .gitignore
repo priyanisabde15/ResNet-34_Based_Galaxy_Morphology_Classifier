@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Large Model weights (GitHub blocks files > 100MB)
+*.pth
+*.pt
+outputs/checkpoints/
+
+# Data directory & large raw files (keep dataset out of git)
+data/
+*.zip
+*.tar.gz
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Keep output plots and logs tracked so results display on GitHub
+!outputs/plots/
+!outputs/plots/*.png
+!outputs/logs/
+!outputs/logs/*.csv

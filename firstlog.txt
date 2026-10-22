@@ -1,0 +1,93 @@
+
+🚀 Hardware: NVIDIA GPU (NVIDIA GeForce RTX 3050 Laptop GPU)
+   VRAM Available: 4.00 GB
+   Automatic Mixed Precision (AMP): ✅ Enabled
+
+📥 Loading real Galaxy Zoo 2 dataset...
+📊 Reading morphology labels from: C:\MEGA PROJECTS\MACHINE UNLEARNING USING GALAXY MORPHOLGY USING CNN (RESNET34)_Project\data\training_solutions_rev1.csv
+📂 Scanning image directory: C:\MEGA PROJECTS\MACHINE UNLEARNING USING GALAXY MORPHOLGY USING CNN (RESNET34)_Project\data\images_training_rev1
+📸 Found 61,578 image files in folder
+✅ Successfully matched 61,578 real Galaxy Zoo 2 images to verified labels.
+   • Smooth (Class 0): 26,693 samples (43.35%)
+   • Featured/Disk (Class 1): 34,826 samples (56.56%)
+   • Artifact (Class 2): 59 samples (0.10%)
+
+📦 Data Splits Summary:
+   • Training set:   43,104 samples
+   • Validation set: 9,237 samples
+   • Test set:       9,237 samples
+
+🧠 Initialized GalaxyResNet34:
+   • Total parameters:     21,418,308
+   • Trainable parameters: 21,418,308
+   • Learnable GeM p-init: 3.0
+   • Target device:        cuda
+
+🎯 Training Parameters:
+   • Epochs:            35
+   • Physical Batch:    16
+   • Gradient Accum:    2 (Effective batch: 32)
+   • LR Backbone:       3e-05
+   • LR Head:           0.0003
+   • Label Smoothing:   0.08
+   • Early Stopping:    10 epochs patience
+
+================================================================================
+  STARTING TRAINING PIPELINE
+================================================================================
+Epoch 01/35 [353.6s] | Train Loss: 0.7313 Acc: 79.61% | Val Loss: 0.6000 Acc: 84.51% | Balanced Acc: 56.47% | F1: 56.26% | GeM p: 2.99
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 1)
+   ⭐ New best model saved! Score: 73.26 (Acc: 84.51%, BalAcc: 56.47%)
+Epoch 02/35 [354.7s] | Train Loss: 0.6229 Acc: 83.82% | Val Loss: 0.5857 Acc: 85.44% | Balanced Acc: 64.34% | F1: 68.96% | GeM p: 2.97
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 2)
+   ⭐ New best model saved! Score: 77.69 (Acc: 85.44%, BalAcc: 64.34%)
+Epoch 03/35 [355.4s] | Train Loss: 0.6009 Acc: 84.99% | Val Loss: 0.5824 Acc: 85.24% | Balanced Acc: 75.33% | F1: 71.88% | GeM p: 2.97
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 3)
+   ⭐ New best model saved! Score: 80.76 (Acc: 85.24%, BalAcc: 75.33%)
+Epoch 04/35 [355.6s] | Train Loss: 0.5907 Acc: 85.69% | Val Loss: 0.5845 Acc: 84.44% | Balanced Acc: 79.13% | F1: 74.48% | GeM p: 2.96
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 4)
+   ⭐ New best model saved! Score: 81.62 (Acc: 84.44%, BalAcc: 79.13%)
+Epoch 05/35 [327.0s] | Train Loss: 0.5862 Acc: 85.95% | Val Loss: 0.5733 Acc: 86.37% | Balanced Acc: 79.95% | F1: 74.19% | GeM p: 2.96
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 5)
+   ⭐ New best model saved! Score: 82.94 (Acc: 86.37%, BalAcc: 79.95%)
+Epoch 06/35 [292.2s] | Train Loss: 0.5810 Acc: 86.37% | Val Loss: 0.5676 Acc: 86.33% | Balanced Acc: 79.47% | F1: 76.41% | GeM p: 2.96
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 6)
+   ⭐ New best model saved! Score: 83.13 (Acc: 86.33%, BalAcc: 79.47%)
+Epoch 07/35 [296.2s] | Train Loss: 0.5772 Acc: 86.57% | Val Loss: 0.5606 Acc: 86.60% | Balanced Acc: 79.85% | F1: 76.65% | GeM p: 2.95
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 7)
+   ⭐ New best model saved! Score: 83.42 (Acc: 86.60%, BalAcc: 79.85%)
+Epoch 08/35 [297.7s] | Train Loss: 0.5722 Acc: 86.90% | Val Loss: 0.5602 Acc: 86.72% | Balanced Acc: 72.56% | F1: 72.51% | GeM p: 2.94
+   ⏳ No improvement for 1/10 epochs (Best Score: 83.42)
+Epoch 09/35 [297.0s] | Train Loss: 0.5726 Acc: 86.94% | Val Loss: 0.5634 Acc: 86.60% | Balanced Acc: 83.65% | F1: 70.64% | GeM p: 2.95
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 9)
+   ⭐ New best model saved! Score: 83.47 (Acc: 86.60%, BalAcc: 83.65%)
+Epoch 10/35 [296.8s] | Train Loss: 0.5656 Acc: 87.22% | Val Loss: 0.5681 Acc: 86.27% | Balanced Acc: 80.12% | F1: 71.31% | GeM p: 2.95
+   ⏳ No improvement for 1/10 epochs (Best Score: 83.47)
+Epoch 11/35 [297.3s] | Train Loss: 0.5637 Acc: 87.26% | Val Loss: 0.5593 Acc: 86.78% | Balanced Acc: 83.92% | F1: 72.87% | GeM p: 2.94
+💾 Checkpoint saved to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\checkpoints\best_model.pth (Epoch 11)
+   ⭐ New best model saved! Score: 83.98 (Acc: 86.78%, BalAcc: 83.92%)
+Epoch 12/35 [297.0s] | Train Loss: 0.5623 Acc: 87.49% | Val Loss: 0.5605 Acc: 86.46% | Balanced Acc: 83.54% | F1: 73.64% | GeM p: 2.94
+   ⏳ No improvement for 1/10 epochs (Best Score: 83.98)
+Epoch 13/35 [296.9s] | Train Loss: 0.5587 Acc: 87.67% | Val Loss: 0.5547 Acc: 86.81% | Balanced Acc: 79.87% | F1: 73.73% | GeM p: 2.95
+   ⏳ No improvement for 2/10 epochs (Best Score: 83.98)
+Epoch 14/35 [297.5s] | Train Loss: 0.5553 Acc: 87.61% | Val Loss: 0.5623 Acc: 86.73% | Balanced Acc: 79.89% | F1: 75.08% | GeM p: 2.95
+   ⏳ No improvement for 3/10 epochs (Best Score: 83.98)
+Epoch 15/35 [313.4s] | Train Loss: 0.5542 Acc: 87.81% | Val Loss: 0.5602 Acc: 86.48% | Balanced Acc: 79.88% | F1: 74.23% | GeM p: 2.95
+   ⏳ No improvement for 4/10 epochs (Best Score: 83.98)
+Epoch 16/35 [317.8s] | Train Loss: 0.5535 Acc: 87.96% | Val Loss: 0.5545 Acc: 86.80% | Balanced Acc: 76.57% | F1: 76.33% | GeM p: 2.95
+   ⏳ No improvement for 5/10 epochs (Best Score: 83.98)
+Epoch 17/35 [297.4s] | Train Loss: 0.5498 Acc: 88.16% | Val Loss: 0.5605 Acc: 86.77% | Balanced Acc: 84.01% | F1: 72.41% | GeM p: 2.95
+   ⏳ No improvement for 6/10 epochs (Best Score: 83.98)
+Epoch 18/35 [298.7s] | Train Loss: 0.5465 Acc: 88.13% | Val Loss: 0.5554 Acc: 86.62% | Balanced Acc: 79.94% | F1: 74.32% | GeM p: 2.95
+   ⏳ No improvement for 7/10 epochs (Best Score: 83.98)
+Epoch 19/35 [310.7s] | Train Loss: 0.5454 Acc: 88.40% | Val Loss: 0.5593 Acc: 86.46% | Balanced Acc: 76.42% | F1: 75.14% | GeM p: 2.96
+   ⏳ No improvement for 8/10 epochs (Best Score: 83.98)
+Epoch 20/35 [337.8s] | Train Loss: 0.5417 Acc: 88.68% | Val Loss: 0.5551 Acc: 87.18% | Balanced Acc: 76.75% | F1: 71.96% | GeM p: 2.97
+   ⏳ No improvement for 9/10 epochs (Best Score: 83.98)
+Epoch 21/35 [337.2s] | Train Loss: 0.5414 Acc: 88.58% | Val Loss: 0.5572 Acc: 86.86% | Balanced Acc: 80.32% | F1: 74.53% | GeM p: 2.97
+   ⏳ No improvement for 10/10 epochs (Best Score: 83.98)
+
+⛔ Early stopping triggered after 10 epochs without improvement.
+
+📊 Training history logged to: C:\MEGA PROJECTS\ResNet34_Galaxy_Morphology_Classifier\outputs\logs\training_log.csv
+🏆 Best Validation Selection Score: 83.98 at Epoch 11
